@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="chatmain">
+        <h1 class="chat-title">全体Chat main</h1>
+        <div id="messages">
+            <ul>
+                <%= render @messages%>
+            </ul>
+        </div>
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" id="chat-input"/>
+                <button class="btn btn-primary" id=button>送信</button>
+            </div>
+        </form>
+    </div>
+</div>
