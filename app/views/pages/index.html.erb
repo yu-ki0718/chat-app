@@ -1,7 +1,18 @@
+<div class ="top-text">
+  <h1 class="title">Hello World</h1>
+  <div class="top-btn">
+      <%= link_to "新規登録",signup_path, class:"btn btn-primary btn-space"%>
+  </div>
+  <div class="top-btn">
+      <%= link_to "ログイン",login_path, class:"btn btn-primary"%>
+  </div>
+</div>
+
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="10000">
       <%=image_tag "slide/slide01.jpg", class:"d-block w-100" %>
+      <button>kno</button>
     </div>
     <div class="carousel-item" data-interval="2000">
       <%=image_tag "slide/slide02.jpg", class:"d-block w-100" %>
