@@ -5,7 +5,6 @@
 // #body{
 //     background-color: #FFF;
 // }
-
 // チャット機能
 .chat{
     text-align: center;
@@ -65,7 +64,6 @@
   .form-inline{
       margin-left: 450px;
   }
-
 //   root
 .top-text{
     background-image: url(slide/top.jpg);
@@ -91,4 +89,22 @@
 }
 .carousel-item{
     height: 450px;
+}
+// Devise
+.top-divise{
+    background-image: url(slide/top-full.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    height: 853px;
+    padding-top: 180px;
+}
+.top-box{
+    background-color:rgba(255,255,255,0.5);
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.form{
+    width: 280px;
 }
