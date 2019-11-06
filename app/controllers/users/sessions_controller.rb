@@ -3,6 +3,17 @@
 class Users::SessionsController < Devise::SessionsController
   # before_action :configure_sign_in_params, only: [:create]
 
+  # def destroy
+  #   log_out
+  #   redirect_to root_path, info: "ログアウトしました"
+  # end
+  
+  # private
+
+  # def log_out
+  #   session.delete(:user_id)
+  #   @current_user=nil
+  # end
   # GET /resource/sign_in
   # def new
   #   super
@@ -13,9 +24,9 @@ class Users::SessionsController < Devise::SessionsController
   #   super
   # end
 
-  # DELETE /resource/sign_out
-  # def destroy
-  #   super
+  # DELETE logout
+  # def logout
+  #   redirect_to "/"
   # end
 
   # protected
