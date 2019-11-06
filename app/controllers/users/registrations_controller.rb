@@ -3,9 +3,13 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
-  def detail
-    @user = User.find_by(id: params[:id])
-  end
+  # def detail
+  #   @user = User.find_by(id: params[:id])
+  # end
+
+  # def update
+  #   "update_path"
+  # end
   # GET /resource/sign_up
   # def new
   #   super
@@ -56,7 +60,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # 会員登録後のリダイレクト先をユーザのプロフィール画面に
   # The path used after sign up.
   def after_sign_up_path_for(resource)
-    "room/show"
+    "/room/show"
   end
 
   
