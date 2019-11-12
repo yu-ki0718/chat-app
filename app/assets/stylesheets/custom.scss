@@ -118,3 +118,12 @@
 #error_explanation ul{
   list-style: none;
 }
+
+// アラート
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  background-color: lightBlue;
+}
