@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
     before_action :configure_permitted_parameters, if: :devise_controller?
-
+    add_flash_types :success, :info, :warning, :danger
     # ログイン後のリダイレクト先
     def after_sign_in_path_for(resource)
         "/room/show"
