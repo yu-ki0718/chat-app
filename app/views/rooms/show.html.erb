@@ -9,7 +9,7 @@
       </li>
       <%= image_tag "slide/profile.png" %>
       <li class="nav-item">
-        <%= link_to "Profile", update_path, class:"nav-link" %>
+        <%= link_to "Profile", edit_user_registration_path, class:"nav-link" %>
       </li>
       <%= image_tag "slide/logout.png" %>
       <li class="nav-item">
@@ -29,7 +29,7 @@
         <form class="form-inline">
             <div class="form-group">
                 <input type="text" id="chat-input"/>
-                <button class="btn btn-primary" id=button>送信</button>
+                <button class="btn btn-primary" id="button" required>送信</button>
             </div>
         </form>
     </div>
