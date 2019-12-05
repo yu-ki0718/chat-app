@@ -3,13 +3,11 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
-  # def detail
-  #   @user = User.find_by(id: params[:id])
-  # end
-
+  
   # def update
   #   "update_path"
   # end
+
   # GET /resource/sign_up
   # def new
   #   super
@@ -63,7 +61,15 @@ class Users::RegistrationsController < Devise::RegistrationsController
     "/room/show"
   end
 
-  
+  protected
+
+  def configure_account_signup_params
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :image, :email, :password, :password_confirmation])
+  end
+
+  def configure_account_update_params
+    devise_parameter_sanitizer.permit(:account_update, keys: [:username, :image, :image_cache, :remove_image, :email, :password, :password_confirmation, :current_password])
+  end
   # The path used after sign up for inactive accounts.
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)

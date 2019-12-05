@@ -127,3 +127,24 @@
   z-index: 10000;
   background-color: lightBlue;
 }
+
+// プロフィール画像
+.circle-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+// Room/プロフィール画像
+.circle-avatar-message{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: left;
+}
+
+// フォーム
+::placeholder{
+  text-align: center;
+}
