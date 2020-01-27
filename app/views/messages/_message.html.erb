@@ -1,7 +1,7 @@
 <% cache message do %>
 <div id="chat-frame">
   <p class="chat-talk">
-    <%= image_tag current_user.image.to_s, class: "circle-avatar-message"%>
+    <%# <%= image_tag current_user.image.to_s, class: "circle-avatar-message"%>
     <%# <span class="talk-icon"><%= message.user.username %>
     <%# </span> %>
     <span class="talk-content"><%= message.content %>
@@ -10,5 +10,3 @@
   </p>
 </div>
 <% end %>
-<%# store_dir変えたら保存先変わった
-メッセージの送信者がnil　Messageにusername追加？ %>

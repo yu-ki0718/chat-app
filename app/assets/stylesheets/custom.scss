@@ -75,7 +75,9 @@
     background-position: center center;
     background-attachment: fixed;
     text-align: center;
-    height: 550px;
+    height: 780px;
+    background-color:rgba(255, 255, 255, 0.342);
+    background-blend-mode:lighten;
 }
 .title{
     padding: 40px 0 60px;
@@ -94,10 +96,21 @@
 .carousel-item{
     height: 450px;
 }
+.howto{
+  height: 320px;
+  width: 580px;
+  background-image: url(slide/howto.jpg);
+  background-size: 300px;
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+  margin-top: 80px;
+  box-shadow: 2px 2px 4px;
+}
 
 // Devise
 .top-divise{
-    background-image: url(slide/top-full.jpg);
+    background-image: url(slide/top.jpg);
     background-size: cover;
     background-position: center center;
     text-align: center;
