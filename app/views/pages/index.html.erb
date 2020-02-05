@@ -1,34 +1,29 @@
 <div class ="top-text">
-  <h1 class="title">Hello World!!</h1>
+  <h1>Chat-app!!</h1>
+  <h3>-新しい世界に飛び出そう-</h3>
   <div class="top-btn">
       <%= link_to "新規登録",signup_path, class:"btn btn-primary btn-space"%>
   </div>
   <div class="top-btn">
       <%= link_to "ログイン",login_path, class:"btn btn-primary"%>
   </div>
-  <div class="howto">
-    <h3>チャット画面</h3>
+</div>
+
+<div class="howto">
+  <div class="howto-contents">
+    <h4>Features</h4>
+    <%=image_tag "slide/pc.png"%>
+    <p>チャット機能を楽しむことが出来ます<br/>世界に飛び出してみましょう</p>
   </div>
 </div>
 
-<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="10000">
-      <%=image_tag "slide/slide01.jpg", class:"d-block w-100" %>
-    </div>
-    <div class="carousel-item" data-interval="2000">
-      <%=image_tag "slide/slide02.jpg", class:"d-block w-100" %>
-    </div>
-    <div class="carousel-item">
-      <%=image_tag "slide/service3.jpg", class:"d-block w-100" %>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+<div class="servise">
+  <h3>始めてみましょう</h3>
+  <p>Chat-app!!は無料のチャットサービスです<br/>
+  安心してサービスをお楽しみ頂けます</p>
+  <%= link_to "新規登録",signup_path, class:"btn btn-primary"%>
 </div>
+
+<footer>
+  <p>COPYRIGHT &#169; Chat-app!! ALL RIGHTS RESERVED. </p>
+</footer>
